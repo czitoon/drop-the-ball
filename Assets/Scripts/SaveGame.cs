@@ -43,6 +43,7 @@ public class SaveGame : MonoBehaviour {
 
     public void ReadSave() {
         if (list == null ) list = Resources.Load<ScenesList>("ScenesList");
+
         if (File.Exists(savePath)) {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(savePath, FileMode.Open);
