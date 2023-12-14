@@ -8,12 +8,13 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.Build;
 using System.IO;
+using UnityEditor.Build.Reporting;
 
-public class SceneLister : IPreprocessBuild {
+public class SceneLister : IPreprocessBuildWithReport {
 
     public int callbackOrder { get { return 0; } }
 
-    public void OnPreprocessBuild(BuildTarget target, string path) {
+    public void OnPreprocessBuild(BuildReport report) {
         SaveScenesList();
     }
 
@@ -40,4 +41,5 @@ public class SceneLister : IPreprocessBuild {
         // Writes the changes
         AssetDatabase.SaveAssets();
     }
+
 }
