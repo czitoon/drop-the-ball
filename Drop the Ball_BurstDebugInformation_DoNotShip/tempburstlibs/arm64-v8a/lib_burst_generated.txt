@@ -1,0 +1,19 @@
+Library: C:\Users\iod\Unity Projects\Drop the Ball\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--platform=Android
+--minimum-os-version=
+--backend=burst-llvm-21
+--target=ARMV8A_AARCH64
+--global-safety-checks-setting=Off
+--meta-data-generation=False
+--dump=Function
+--float-precision=Standard
+--target-framework=NetFramework
+--branch-protection=Standard
+--generate-link-xml=Temp\burst.link.xml
+--temp-folder=C:\Users\iod\Unity Projects\Drop the Ball\Temp\Burst
+--key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--decode-folder=C:\Users\iod\Unity Projects\Drop the Ball\Library\Burst
+--output=C:\Users\iod\Unity Projects\Drop the Ball\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--pdb-search-paths=Temp/ManagedSymbols/
+
+

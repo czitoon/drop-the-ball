@@ -11,4 +11,9 @@ public class SoundManager : MonoBehaviour {
     public void ChangeSoundEnabled(bool checkmark) {
         SaveGame.save.ChangeSoundEnabled(checkmark);
     }
+
+    public void ChangeMusicEnabled(bool checkmark)
+    {
+        SaveGame.save.ChangeMusicEnabled(checkmark);
+    }
 }

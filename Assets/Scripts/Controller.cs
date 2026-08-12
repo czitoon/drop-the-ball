@@ -104,7 +104,7 @@ public class Controller : MonoBehaviour {
         ball.transform.SetParent(transform);
         cameraRig.transform.position = ball.transform.position;
         // Remove any velocity from the ball.
-        ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        ball.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
         ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 

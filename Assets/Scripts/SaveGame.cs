@@ -90,6 +90,13 @@ public class SaveGame : MonoBehaviour {
         if (data.soundEnabled) AudioListener.volume = data.volume;
         else AudioListener.volume = 0f;
     }
+    
+    public void ChangeMusicEnabled(bool checkmark)
+    {
+        data.musicEnabled = checkmark;
+        if (data.musicEnabled) AudioListener.volume = data.volume;
+        else AudioListener.volume = 0f;
+    }
 
     public void LevelComplete(float newTime) {
         if (data.times[SceneManager.GetActiveScene().buildIndex] > newTime) {
@@ -120,11 +127,16 @@ public class SaveGame : MonoBehaviour {
     public bool GetSoundEnabled() {
         return data.soundEnabled;
     }
+    public bool GetMusicEnabled()
+    {
+        return data.musicEnabled;
+    }
 }
 
 [System.Serializable]
 class SaveData {
     public bool soundEnabled = true;
+    public bool musicEnabled = true;
     public float volume = 1f;
 
     public int lvlsWon = 0;
