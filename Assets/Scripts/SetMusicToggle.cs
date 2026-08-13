@@ -9,7 +9,7 @@ public class SetToggle : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        tog.isOn = SaveGame.save.GetSoundEnabled();
+        tog.isOn = SaveGame.save.GetMusicEnabled();
     }
 
 }

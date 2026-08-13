@@ -87,15 +87,11 @@ public class SaveGame : MonoBehaviour {
 
     public void ChangeSoundEnabled(bool checkmark) {
         data.soundEnabled = checkmark;
-        if (data.soundEnabled) AudioListener.volume = data.volume;
-        else AudioListener.volume = 0f;
     }
     
     public void ChangeMusicEnabled(bool checkmark)
     {
         data.musicEnabled = checkmark;
-        if (data.musicEnabled) AudioListener.volume = data.volume;
-        else AudioListener.volume = 0f;
     }
 
     public void LevelComplete(float newTime) {

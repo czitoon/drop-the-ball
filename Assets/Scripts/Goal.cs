@@ -11,7 +11,10 @@ public class Goal : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         if (other == ball) {
             menu.WinGame();
-            explode.Play();
+            if (SaveGame.save.GetSoundEnabled()) {
+                explode.volume = SaveGame.save.GetVolume();
+                explode.Play();
+            }
         }
     }
 }
