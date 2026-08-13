@@ -10,6 +10,7 @@ public class Controller : MonoBehaviour {
     public GameObject ball;
     public GameObject maze;
     public GameObject cameraRig;
+    public GameObject lightRig;
     public GameObject goal;
     public EventSystem events;
 
