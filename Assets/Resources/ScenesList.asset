@@ -11,14 +11,5 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e8131f82f8442c449712087f93f9b02, type: 3}
   m_Name: ScenesList
-  m_EditorClassIdentifier: 
-  scenesNames:
-  - 00 - Loader
-  - 01 - Tutorial
-  - 02 - Farah
-  - 03 - Amy
-  - 04 - Spiral
-  - 05 - Freefall
-  - 06 - Jump
-  - 07 - Into the Sun
-  - 08 - Flip
+  m_EditorClassIdentifier: Assembly-CSharp::ScenesList
+  scenesNames: []

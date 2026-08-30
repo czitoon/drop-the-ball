@@ -94,13 +94,9 @@ public class SaveGame : MonoBehaviour {
         data.musicEnabled = checkmark;
     }
 
-    public void LevelComplete(float newTime) {
-        if (data.times[SceneManager.GetActiveScene().buildIndex] > newTime) {
-            data.times[SceneManager.GetActiveScene().buildIndex] = newTime;
-        }
+    public void LevelComplete() {
         if (SceneManager.GetActiveScene().buildIndex > data.lvlsWon) {
             data.lvlsWon++;
-            data.times[SceneManager.GetActiveScene().buildIndex] = newTime;
         }
     }
 

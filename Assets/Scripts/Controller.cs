@@ -10,14 +10,14 @@ public class Controller : MonoBehaviour {
     public GameObject ball;
     public GameObject maze;
     public GameObject cameraRig;
-    public GameObject lightRig;
     public GameObject goal;
     public EventSystem events;
 
     public MenuSystem menu;
 
     private Vector3 ballStartPosition;
-    private bool frozen = false;
+    private bool frozen = true;
+    private Quaternion rotationOffset = new Quaternion();
 
     // Use this for initialization
     void Start() {
@@ -51,25 +51,42 @@ public class Controller : MonoBehaviour {
     void InGameControl()
     {
         // Position camera rig
+
         cameraRig.transform.position = ball.transform.position;
 
-        if (Input.touchCount > 0) {
+        if (Input.touchCount > 0)
+        {
+            menu.ShowFrame();
             // In game control of the maze.
             RotateMaze();
         }
-        else { 
+        else
+        {
+            menu.HideFrame();
             // In game control of the camera.
             RotateCamera();
         }
-    }
+    }   
 
     void RotateCamera()
     {
         // Set camera rig to gyro input
-        cameraRig.transform.rotation = Input.gyro.attitude;
+        Quaternion newRotation = new Quaternion(Input.gyro.attitude.x, Input.gyro.attitude.y + rotationOffset.eulerAngles.y, Input.gyro.attitude.z, Input.gyro.attitude.w);
+
+
+        cameraRig.transform.rotation = newRotation;
         // Correct gyro input for android orientation (may need updates to fix for iOS).
         cameraRig.transform.Rotate(0f, 0f, 180f, Space.Self);
         cameraRig.transform.Rotate(90f, 0f, 0f, Space.World);
+    }
+
+    public void RotateCameraManual(float value)
+    {
+        rotationOffset.eulerAngles = new Vector3(0f, value - Input.gyro.attitude.eulerAngles.y, 0f);
+    }
+    public Quaternion getRotationOffset()
+    {
+        return rotationOffset;
     }
 
     void RotateMaze()
@@ -89,7 +106,7 @@ public class Controller : MonoBehaviour {
     }
 
     private IEnumerator WaitThenReset() {
-        yield return new WaitForSecondsRealtime(0.05f);
+        yield return new WaitForSecondsRealtime(0.01f);
         ResetLevel();
     }
     public void ResetLevel()

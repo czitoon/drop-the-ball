@@ -14,7 +14,7 @@ public class LvlButton : MonoBehaviour {
         if (targetLVL <= SaveGame.save.GetHighestLevel() + 1) {
             transform.GetComponent<Button>().interactable = true;
             txt.color = Color.black;
-            txt.text = SaveGame.save.GetLevelName(targetLVL) + "\nBest Time: " + SaveGame.save.GetBestTime(targetLVL).ToString("0.00");
+            txt.text = SaveGame.save.GetLevelName(targetLVL);
         }
         else {
             transform.GetComponent<Button>().interactable = false;

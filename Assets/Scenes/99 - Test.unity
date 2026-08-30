@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 119ec07f1c7ed204db46bd8465fd5a50, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,13 +37,13 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 621409129}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  m_BakeOnSceneLoad: 0
+  m_BakeOnSceneLoad: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &508443116
+--- !u!1001 &621409128
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -129,9 +129,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4823391752132730, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
+    - target: {fileID: 1642246750473762, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
+      propertyPath: m_Name
+      value: Controller
       objectReference: {fileID: 0}
     - target: {fileID: 4823391752132730, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
       propertyPath: m_LocalPosition.x
@@ -161,6 +161,28 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4823391752132730, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823391752132730, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823391752132730, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 143754400780683966, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 143754400780683966, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224125614270319238, guid: 5dcf080071d43be4fa074d4fc9a0c657,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -186,13 +208,34 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3251800174990813863, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251800174990813863, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251800174990813863, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
+--- !u!108 &621409129 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 108206605855648306, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+    type: 3}
+  m_PrefabInstance: {fileID: 621409128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 508443116}
+  - {fileID: 621409128}

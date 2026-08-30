@@ -851,7 +851,7 @@ PrefabInstance:
     - target: {fileID: 4237091081633534814, guid: a71376a526ecd3d45b011dfdb7af69b6,
         type: 3}
       propertyPath: m_text
-      value: Ba
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 4237091081633534814, guid: a71376a526ecd3d45b011dfdb7af69b6,
         type: 3}

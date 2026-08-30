@@ -8,6 +8,8 @@ public class MenuSystem : MonoBehaviour {
     public GameObject panel;
     public GameObject basic;
     public GameObject ingame;
+    public GameObject inpause;
+    public GameObject frame;
     public GameObject start;
     public GameObject pause;
     public GameObject win;
@@ -27,12 +29,29 @@ public class MenuSystem : MonoBehaviour {
         ingame.SetActive(false);
         start.SetActive(false);
         pause.SetActive(false);
+        inpause.SetActive(false);
         win.SetActive(false);
         lose.SetActive(false);
         side.SetActive(false);
         options.SetActive(false);
         lvlselect.SetActive(false);
         help.SetActive(false);
+        frame.SetActive(false);
+    }
+
+    public void RotateCameraSlider(float value)
+    {
+        control.RotateCameraManual(value);
+    }
+
+    public void ShowFrame()
+    {
+        frame.SetActive(true);
+    }
+
+    public void HideFrame()
+    {
+        frame.SetActive(false);
     }
 
     void ShowBasic() {
@@ -53,11 +72,18 @@ public class MenuSystem : MonoBehaviour {
 
     public void ResetLevel() {
         control.ResetLevel();
-        Timer.timer.Restart();
         StartGame();
     }
 
-    public void PauseGame() {
+    public void PauseGame()
+    {
+        control.FreezeTime();
+        HideAll();
+        inpause.SetActive(true);
+        panel.SetActive(true);
+    }
+
+    public void PauseMenu() {
         control.FreezeTime();
         ShowBasic();
         pause.SetActive(true);
@@ -81,7 +107,7 @@ public class MenuSystem : MonoBehaviour {
         win.SetActive(true);
         stasis = win;
 
-        SaveGame.save.LevelComplete(Timer.timer.GetTime());
+        SaveGame.save.LevelComplete();
     }
 
     public void LoseGame() {

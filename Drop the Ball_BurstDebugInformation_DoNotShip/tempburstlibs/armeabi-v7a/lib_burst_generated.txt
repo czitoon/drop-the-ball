@@ -11,7 +11,7 @@ Library: C:\Users\iod\Unity Projects\Drop the Ball\Temp\BurstOutput\tempburstlib
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\iod\Unity Projects\Drop the Ball\Temp\Burst
 --debug=Full
---key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\iod\Unity Projects\Drop the Ball\Library\Burst
 --output=C:\Users\iod\Unity Projects\Drop the Ball\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
@@ -122,7 +122,7 @@ Library: C:\Users\iod\Unity Projects\Drop the Ball\Temp\BurstOutput\tempburstlib
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\iod\Unity Projects\Drop the Ball\Temp\Burst
 --debug=Full
---key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.7f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\iod\Unity Projects\Drop the Ball\Library\Burst
 --output=C:\Users\iod\Unity Projects\Drop the Ball\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
