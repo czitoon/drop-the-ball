@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuSystem : MonoBehaviour {
 
@@ -20,6 +21,7 @@ public class MenuSystem : MonoBehaviour {
     public GameObject help;
 
     public Controller control;
+    public Slider rotateSlider;
 
     private GameObject stasis;
 
@@ -39,9 +41,9 @@ public class MenuSystem : MonoBehaviour {
         frame.SetActive(false);
     }
 
-    public void RotateCameraSlider(float value)
+    public void RotateCameraSlider()
     {
-        control.RotateCameraManual(value);
+        control.RotateCameraManual(rotateSlider.value);
     }
 
     public void ShowFrame()

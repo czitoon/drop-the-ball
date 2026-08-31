@@ -17,7 +17,7 @@ public class Controller : MonoBehaviour {
 
     private Vector3 ballStartPosition;
     private bool frozen = true;
-    private Quaternion rotationOffset = new Quaternion();
+    private float rotationOffset = 0f;
 
     // Use this for initialization
     void Start() {
@@ -71,20 +71,20 @@ public class Controller : MonoBehaviour {
     void RotateCamera()
     {
         // Set camera rig to gyro input
-        Quaternion newRotation = new Quaternion(Input.gyro.attitude.x, Input.gyro.attitude.y + rotationOffset.eulerAngles.y, Input.gyro.attitude.z, Input.gyro.attitude.w);
-
-
-        cameraRig.transform.rotation = newRotation;
-        // Correct gyro input for android orientation (may need updates to fix for iOS).
-        cameraRig.transform.Rotate(0f, 0f, 180f, Space.Self);
-        cameraRig.transform.Rotate(90f, 0f, 0f, Space.World);
+        cameraRig.transform.rotation = Input.gyro.attitude;
+        // Correct gyro input for android orientation and offset (may need updates to fix for iOS).
+        //if (Application.platform == RuntimePlatform.Android)
+        
+            cameraRig.transform.Rotate(0f, 0f, 180f, Space.Self);
+            cameraRig.transform.Rotate(90f, rotationOffset, 0f, Space.World);
+        
     }
 
     public void RotateCameraManual(float value)
     {
-        rotationOffset.eulerAngles = new Vector3(0f, value - Input.gyro.attitude.eulerAngles.y, 0f);
+        rotationOffset = value;
     }
-    public Quaternion getRotationOffset()
+    public float getRotationOffset()
     {
         return rotationOffset;
     }

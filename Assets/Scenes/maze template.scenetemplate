@@ -36,11 +36,16 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 2fd6421f253b4ef1a19526541f9ffc0c, type: 3}
     instantiationMode: 1
+  - dependency: {fileID: 1556160808460552, guid: 3b1dc191232150940a3a5cd2129cbda3,
+      type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 2100000, guid: c712dce8c24ce44439ef46cff1dc91c0, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 8300000, guid: 2613a3fbafb5cf644a831a05965208b9, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 13400000, guid: 281e26d853788aa43a8af482487ffabe, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 13400000, guid: a9eeb17e3f4f46f4193dc890e59f8e56, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 12800000, guid: fd413f5dcfb3eaa4fbf1fbce2b22e592, type: 3}
     instantiationMode: 1
@@ -50,6 +55,8 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: f8221456363241e4ea52cc516adb7baf, type: 2}
     instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 107b3edd6f605e54b92da7aaaf833b5f, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 13400000, guid: 16a43f0dd94db504b9cbc5c23097a434, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 5104b753c28bbb845a9a3985dd401161, type: 3}
@@ -58,10 +65,14 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 8300000, guid: 82eb2c28d23bf684587999433fea0601, type: 3}
     instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: f9ddea0cef15e1b4a9b1a44fd2ba8555, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 119ec07f1c7ed204db46bd8465fd5a50, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 03a45eae4ae5abb44b2672e175c0495f, type: 2}
     instantiationMode: 1
+  - dependency: {fileID: 2100000, guid: a900e5a95e81eac4f83ed78c3c43ae84, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 7f61afa91a772d34e8873f531a56c02a, type: 3}
     instantiationMode: 0
   templatePipeline: {fileID: 0}
