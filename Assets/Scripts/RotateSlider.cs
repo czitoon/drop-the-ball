@@ -17,7 +17,7 @@ public class RotateSlider : MonoBehaviour
     void Update()
     {
         // Only update the slider display if the player is not dragging it
-        if (Input.touchCount < 1)
+        /*if (Input.touchCount < 1)
         {
             Quaternion rotangle = Input.gyro.attitude;
             Quaternion rotationChange = Quaternion.Euler(0, 0, 180);
@@ -25,6 +25,6 @@ public class RotateSlider : MonoBehaviour
             rotationChange = Quaternion.Euler(90, control.getRotationOffset(), 0);
             rotangle = rotationChange * rotangle;
             slider.SetValueWithoutNotify(rotangle.eulerAngles.y);
-        }
+        }*/
     }
 }

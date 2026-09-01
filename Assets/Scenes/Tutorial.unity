@@ -355,10 +355,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4783431703162594, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4823391752132730, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -405,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4947852060689062, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.52
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4947852060689062, guid: 5dcf080071d43be4fa074d4fc9a0c657, type: 3}
       propertyPath: m_LocalPosition.z
@@ -433,11 +429,16 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c712dce8c24ce44439ef46cff1dc91c0, type: 2}
-    - target: {fileID: 114962599998247782, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+    - target: {fileID: 143754400780683966, guid: 5dcf080071d43be4fa074d4fc9a0c657,
         type: 3}
-      propertyPath: rotateSlider
-      value: 
-      objectReference: {fileID: 1135742198}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 143754400780683966, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224125614270319238, guid: 5dcf080071d43be4fa074d4fc9a0c657,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -463,10 +464,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3251800174990813863, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251800174990813863, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251800174990813863, guid: 5dcf080071d43be4fa074d4fc9a0c657,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4690625342345489472, guid: 5dcf080071d43be4fa074d4fc9a0c657,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4770336423547616994, guid: 5dcf080071d43be4fa074d4fc9a0c657,
         type: 3}
@@ -552,18 +568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb9d3af707d69d408a81ffe4c8095a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1135742198 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8780785100203390145, guid: 5dcf080071d43be4fa074d4fc9a0c657,
-    type: 3}
-  m_PrefabInstance: {fileID: 935502913}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1001 &1253802127
 PrefabInstance:
   m_ObjectHideFlags: 0
